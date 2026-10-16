@@ -55,7 +55,7 @@ Notebook:
 ![Print - Notebook](<READ ME/NOTEBOOK.jpeg>)
 
 Celular:
-![Print - Notebook](<READ ME/CELULAR.jpeg>)
+![Print - Celular](<READ ME/CELULAR.jpeg>)
 
 Acesso ao projeto
 - Git Hub Pages: [Clique aqui para acessar o site](https://analarafarai.github.io/Lyra-Stark/)
