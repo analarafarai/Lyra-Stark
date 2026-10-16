@@ -30,7 +30,7 @@ Decisoes de UI/UX
 - Contraste: o fundo escuro contrasta com o texto claro, em tons de branco e rosa, favorecendo a leitura.
 - Consistência: cards, bordas, barras e etiquetas repetem a mesma paleta de cores e os mesmos espaçamentos.
 - Feedback: os cards do inventário e o botão mudam de cor e tamanho ao passar o mouse, indicando que podem ser interagidos.
-- 
+  
 Estrutura de pastas
 ficha-heroi-parte1/
 ├── index.html
@@ -51,11 +51,11 @@ Protótipo
 ![Protótipo - parte 2](<READ ME/PROTÓTIPO PT2.png>)
 
 Capturas de tela
-Notebook:
+- Notebook:
 ![Print - Notebook](<READ ME/NOTEBOOK.jpeg>)
 
-Celular:
-![Print - Celular](<READ ME/CELULAR.jpeg>)
+- Celular:
+![Print - Celular](<READ ME/CELULAR.jpg>)
 
 Acesso ao projeto
 - Git Hub Pages: [Clique aqui para acessar o site](https://analarafarai.github.io/Lyra-Stark/)
