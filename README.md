@@ -47,22 +47,24 @@ ficha-heroi-parte1/
     └── AVENGERS.png
   
 Protótipo
-![Protótipo — parte 1](<READ ME/PROTÓTIPO PT1.png>)
-![Protótipo — parte 2](<READ ME/PROTÓTIPO PT2.png>)
+![Protótipo - parte 1](<READ ME/PROTÓTIPO PT1.png>)
+![Protótipo - parte 2](<READ ME/PROTÓTIPO PT2.png>)
 
 Capturas de tela
 Notebook:
-![Site no notebook](<READ ME/PRINT SITE NOTEBOOK.png>)
+![Print - Notebook](<READ ME/NOTEBOOK PT1.png>)
 
 Celular:
+![Print - Notebook](<READ ME/CELULAR.png>)
 
 Acesso ao projeto
-colocar link
+Git Hub Pages: [Clique aqui para acessar o site](https://analarafarai.github.io/Lyra-Stark/)
+Repositório Git Hub: [Acesse o código-fonte aqui](https://github.com/analarafarai/Lyra-Stark)
 
 Desenvolvido por
-Ana Lara da Rocha Faria
-Disciplina: Tecnologia Web
-Projeto acadêmico - Parte 1
+- Ana Lara da Rocha Faria
+- Disciplina: Tecnologia Web
+- Projeto acadêmico - Parte 1
 
 Uso educacional
 Projeto desenvolvido para fins educacionais. A personagem utiliza referências de universos de ficção como parte de uma criação de fã, sem afiliação oficial.
