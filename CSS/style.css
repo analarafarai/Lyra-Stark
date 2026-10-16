@@ -35,14 +35,11 @@ p {
   margin-bottom: 18px;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   line-height: 1.15;
 }
 
-h1,
-h2 {
+h1, h2 {
   font-family: "Anton", Impact, Arial, sans-serif;
   font-weight: normal;
 }
@@ -72,10 +69,8 @@ section {
   border-bottom: 1px solid #392535;
 }
 
-/*blocos encolham em telas menores. */
-section div,
-section article,
-form {
+/* pra poder diminuir nas telas menores. */
+section div, section article, form {
   min-width: 0;
 }
 
@@ -93,7 +88,8 @@ form {
   margin-bottom: 0;
 }
 
-/* FOCO PARA NAVEGAÇÃO PELO TECLADO */
+/* ficar destacado quando a pessoa for selecionar 
+pra colocar o nome ou o email, mensagem e o enviar */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -102,7 +98,8 @@ textarea:focus-visible {
   outline-offset: 4px;
 }
 
-/* CABEÇALHO E MENU */
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -148,7 +145,10 @@ nav a {
   font-size: 13px;
 }
 
-/* INÍCIO */
+
+
+
+
 .inicio {
   display: flex;
   align-items: center;
@@ -180,7 +180,7 @@ nav a {
   font-size: 14px;
 }
 
-/* Localização no final do texto inicial. */
+/* pra poder fazer a minha faixa rosa.*/
 .textodoinicio .descrição:last-child {
   margin-top: 55px;
   margin-bottom: 0;
@@ -197,17 +197,16 @@ nav a {
   letter-spacing: 2px;
 }
 
-/* SEÇÕES COM DUAS COLUNAS */
-.origem,
-.habilidades,
-.guilda {
+
+.origem, .habilidades, .guilda {
   display: grid;
-  grid-template-columns: 1.15fr 1fr;
+  grid-template-columns: 1.15fr 1fr; 
   gap: 60px;
   align-items: start;
 }
 
-/* ORIGEM E FICHA */
+
+
 .historiaemdestaque {
   color: #ff72d1;
   font-size: 19px;
@@ -235,8 +234,7 @@ table {
   font-size: 13px;
 }
 
-th,
-td {
+th, td {
   padding: 11px 0;
   border-bottom: 1px solid #392535;
 }
@@ -260,9 +258,9 @@ td {
   font-size: 11px;
 }
 
-/* HABILIDADES E NÍVEL */
-#habilidades,
-#inventario {
+
+
+#habilidades, #inventario {
   background-color: #160e16;
 }
 
@@ -294,18 +292,14 @@ td {
   white-space: nowrap;
 }
 
-/* BARRAS DE PROGRESSO */
+
 .barra {
   height: 5px;
   background-color: #43213c;
 }
 
-.preenche0,
-.preenche7,
-.preenche97,
-.preenche98,
-.preenche99,
-.preenche100 {
+.preenche0, .preenche7, .preenche97, .preenche98,
+.preenche99,.preenche100 {
   height: 100%;
   background-color: #f127b5;
 }
@@ -334,10 +328,11 @@ td {
   width: 100%;
 }
 
-/* VIDA, ENERGIA, CONTROLE MENTAL E SOBRECARGA */
+
+
 .listadehabilidades {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);/*pra fzr 4 colunas iguais */
   gap: 24px;
   margin-top: 40px;
 }
@@ -354,7 +349,7 @@ td {
   line-height: 1.5;
 }
 
-/* Indicadores menores que o nível principal. */
+
 .listadehabilidades .numerodonivel {
   font-size: 42px;
 }
@@ -363,7 +358,8 @@ td {
   font-size: 18px;
 }
 
-/* ATRIBUTOS */
+
+
 .atributos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -385,7 +381,7 @@ td {
   font-size: 14px;
 }
 
-/* PODERES */
+
 .poderes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -406,7 +402,7 @@ td {
   font-size: 14px;
 }
 
-/* HABILIDADE SUPREMA */
+
 .suprema {
   margin-top: 30px;
   padding: 28px;
@@ -422,11 +418,12 @@ td {
   font-size: 11px;
 }
 
+/*pra não ficar com o espação sobrando*/
 .suprema p:last-child {
   margin-bottom: 0;
 }
 
-/* INVENTÁRIO */
+
 .inventario {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -451,13 +448,13 @@ td {
   border-color: #f127b5;
 }
 
-/* Mantém as imagens inteiras, sem recortes. */
+
 .inventario img {
   width: 100%;
   height: auto;
 }
 
-/* CONQUISTAS */
+
 .conquistas {
   margin-top: 40px;
   padding-top: 30px;
@@ -478,7 +475,8 @@ li {
   font-size: 14px;
 }
 
-/* GUILDA */
+
+
 .guilda {
   align-items: center;
 }
@@ -488,7 +486,8 @@ li {
   margin: 30px auto 0;
 }
 
-/* FORMULÁRIO */
+
+
 form {
   padding: 28px;
   border: 1px solid #392535;
@@ -509,8 +508,7 @@ label {
   font-weight: bold;
 }
 
-input,
-textarea {
+input, textarea {
   width: 100%;
   padding: 14px;
   background-color: #180f18;
@@ -520,8 +518,7 @@ textarea {
   font-size: 16px;
 }
 
-input::placeholder,
-textarea::placeholder {
+input::placeholder, textarea::placeholder {
   color: #bdaeba;
   opacity: 1;
 }
@@ -554,7 +551,9 @@ button:hover {
   transform: scale(1.01);
 }
 
-/* RODAPÉ */
+
+
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -576,11 +575,12 @@ footer a {
   font-size: 11px;
 }
 
-/* PARA CELULAR */
+
+
+
+
 @media (max-width: 767px) {
-  header,
-  section,
-  footer {
+    header,section,footer {
     padding: 30px 6%;
   }
 
@@ -597,7 +597,7 @@ footer a {
     font-size: 32px;
   }
 
-  /* Texto acima da imagem. */
+  /* deixa o texto em cima e a imagem em baixo */
   .inicio {
     flex-direction: column;
     padding: 0;
@@ -613,21 +613,15 @@ footer a {
     height: auto;
   }
 
-  /* Seções e cards em uma coluna. */
-  .origem,
-  .habilidades,
-  .guilda,
-  .listadehabilidades,
-  .atributos,
-  .poderes,
-  .inventario {
+  /*p deixar em uma coluna só*/
+  .origem,.habilidades,.guilda,
+  .listadehabilidades,.atributos,
+  .poderes,.inventario {
     grid-template-columns: 1fr;
     gap: 25px;
   }
 
-  .ficha,
-  .nivel,
-  form {
+  .ficha,.nivel,form {
     padding: 20px;
   }
 
