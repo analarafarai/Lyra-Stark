@@ -59,7 +59,7 @@ Capturas de tela
 
 Acesso ao projeto
 - Git Hub Pages: [Clique aqui para acessar o site](https://analarafarai.github.io/Lyra-Stark/)
-- Repositório Git Hub: [Acesse o código-fonte aqui](https://github.com/analarafarai/Lyra-Stark)
+- Repositório Git Hub: [Acesse o código fonte aqui](https://github.com/analarafarai/Lyra-Stark)
 
 Desenvolvido por
 - Ana Lara da Rocha Faria
