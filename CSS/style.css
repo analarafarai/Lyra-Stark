@@ -72,7 +72,7 @@ section {
   border-bottom: 1px solid #392535;
 }
 
-/* Permite que os blocos encolham em telas menores. */
+/*blocos encolham em telas menores. */
 section div,
 section article,
 form {
