@@ -73,8 +73,8 @@ Capturas de tela
 ![Print - Notebook](<NOOTBOOK2/.jpeg>)
 
 - Celular:
-![Print - Celular parte 1](<READ ME/CELULAR2.jpg>)
-![Print - Celular parte 2](<READ ME/CELULAR3.jpg>)
+![Print - Celular parte 1](<READ ME/CELULAR2.jpeg>)
+![Print - Celular parte 2](<READ ME/CELULAR3.jpeg>)
 
 Acesso ao projeto
 - Git Hub Pages: [Clique aqui para acessar o site](https://analarafarai.github.io/Lyra-Stark/)
