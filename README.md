@@ -65,8 +65,8 @@ Lyra Stark
     └── AVENGERS.png
   
 Protótipo
-![Protótipo - parte 1](<READ ME/PROTÓTIPO PT1.png>)
-![Protótipo - parte 2](<READ ME/PROTÓTIPO PT2.png>)
+![Protótipo - parte 1](<READ ME/PROTÓTIPO1.png>)
+![Protótipo - parte 2](<READ ME/PROTÓTIPO2.png>)
 
 Capturas de tela
 - Notebook:
@@ -78,7 +78,7 @@ Capturas de tela
 
 Acesso ao projeto
 - Git Hub Pages: [Clique aqui para acessar o site](https://analarafarai.github.io/Lyra-Stark/)
-- Repositório Git Hub: [Acesse o código-fonte aqui](https://github.com/analarafarai/Lyra-Stark)
+- Repositório Git Hub: [Acesse o código fonte aqui](https://github.com/analarafarai/Lyra-Stark)
 
 Desenvolvido por
 - Ana Lara da Rocha Faria
