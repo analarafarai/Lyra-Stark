@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #100b10;
+  background-color: #2b212d;
   color: #f7f1f5;
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -77,7 +77,7 @@ section div, section article, form {
 .etiqueta {
   color: #ff72d1;
   font-family: "Courier New", monospace;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -100,7 +100,7 @@ textarea:focus-visible {
 
 
 
-header {
+header{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,7 +108,18 @@ header {
   gap: 25px;
   padding: 22px 7%;
   border-bottom: 1px solid #392535;
+  /*deixar o header fixo no topo*/
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #221924;
 }
+
+html {
+  scroll-padding-top: 100px; /*para o header não cobrir o trem*/
+  scroll-behavior: smooth; /*rolar suave*/
+  scrollbar-color: #ff72d1 #100b10; /*mudar a cor da barra de rolagem*/
+} 
 
 .ícone {
   display: flex;
@@ -131,18 +142,22 @@ header {
   object-fit: contain;
 }
 
-nav {
+#botao-menu {
+  display: none;
+}
+
+.menu-navegacao {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
 
-nav a {
+.menu-navegacao a{
   display: flex;
   align-items: center;
   min-height: 44px;
   padding: 8px 2px;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 
@@ -160,6 +175,15 @@ nav a {
 .textodoinicio {
   width: 52%;
   padding: 50px 24px 50px 0;
+}
+
+#saudacao-heroi {
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  background-color: #241525;
+  border-left: 3px solid #ff72d1;
+  color: #f7f1f5;
+  font-size: 15px;
 }
 
 .inicio h2 {
@@ -188,7 +212,7 @@ nav a {
 
 .linha {
   padding: 18px 7%;
-  background-color: #21101e;
+  background-color: #302333;
   border-bottom: 1px solid #5b344f;
   color: #ff72d1;
   font-family: "Courier New", monospace;
@@ -212,11 +236,44 @@ nav a {
   font-size: 19px;
 }
 
+.capitulo {
+  margin-bottom: 32px;
+}
+
+.btn-ver-mais {
+  margin-top: 0;
+  width: auto;
+  font-size: 16px;
+}
+
 .ficha {
   padding: 25px;
-  background-color: #180f18;
+  background-color: #382b3b;
   border: 1px solid #5b344f;
 }
+
+.linha-do-tempo {
+  margin-top: 36px;
+  padding-left: 16px;
+  border-left: 3px solid #a6538b;
+}
+
+.linha-do-tempo h3 {
+  margin-bottom: 97px;
+  color: #ff72d1;
+}
+
+.linha-do-tempo strong {
+  color: #ff72d1;
+}
+
+.linha-do-tempo p {
+  margin-bottom: 0;
+  padding-bottom: 127px;
+  line-height: 1.7;
+}
+
+
 
 .ficha h3 {
   color: #ff72d1;
@@ -231,7 +288,7 @@ nav a {
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 th, td {
@@ -255,13 +312,14 @@ td {
   margin-top: 22px;
   margin-bottom: 0;
   text-align: center;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 
 
 #habilidades, #inventario {
-  background-color: #160e16;
+  background-color: #261d28;
+
 }
 
 .nivel {
@@ -406,7 +464,7 @@ td {
 .suprema {
   margin-top: 30px;
   padding: 28px;
-  background-color: #21101e;
+  background-color: #382b3b;
   border-left: 3px solid #f127b5;
 }
 
@@ -423,6 +481,42 @@ td {
   margin-bottom: 0;
 }
 
+.filtros-inventario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.filtros-inventario .btn-filtro {
+  width: auto;
+  min-height: 44px;
+  margin: 0;
+  padding: 8px 14px;
+  background-color: #211421;
+  color: #f7f1f5;
+  border: 1px solid #5b344f;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  transform: none;
+}
+
+.filtros-inventario .btn-filtro:hover {
+  border-color: #ff72d1;
+}
+
+.filtros-inventario .btn-filtro.ativo {
+  background-color: #ff72d1;
+  color: #100b10;
+  border-color: #ff72d1;
+}
+
+#contador-inventario {
+  margin: 10px 0 0;
+  color: #d9a6c9;
+  font-size: 14px;
+}
 
 .inventario {
   display: grid;
@@ -433,7 +527,7 @@ td {
 
 .inventario article {
   padding: 12px;
-  background-color: #180f18;
+  background-color: #382b3b;
   border: 1px solid #392535;
 
   transition:
@@ -454,15 +548,40 @@ td {
   height: auto;
 }
 
+.inventario article h3 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
 
 .conquistas {
   margin-top: 40px;
-  padding-top: 30px;
-  border-top: 1px solid #5b344f;
+  padding: 24px;
+  background-color: #302333;
+  border: 1px solid #5b344f;
+  border-radius: 8px;
 }
 
 .conquistas h3 {
-  font-size: 20px;
+  margin-bottom: 16px;
+  color: #ff72d1;
+  font-size: 22px;
+}
+
+.conquistas ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.conquistas li {
+  padding: 12px 16px;
+  background-color: #3d2d40;
+  border-left: 3px solid #a6538b;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.conquistas li:hover {
+  background-color: #3b2940;
 }
 
 ul {
@@ -481,16 +600,62 @@ li {
   align-items: center;
 }
 
+
+body.modo-noturno,
+.modo-noturno header {
+  background-color: #120e15;
+}
+
+.modo-noturno #habilidades,
+.modo-noturno #inventario {
+  background-color: #17111a;
+}
+
+.modo-noturno .linha,
+.modo-noturno .ficha,
+.modo-noturno .suprema,
+.modo-noturno .inventario article,
+.modo-noturno .conquistas,
+.modo-noturno .guilda form,
+.modo-noturno .guilda input,
+.modo-noturno .guilda textarea,
+.modo-noturno .menu-navegacao.aberto {
+  background-color: #201724;
+}
+
+.modo-noturno .conquistas li {
+  background-color: #2a1e2e;
+}
+
+
+#botao-modo-noturno {
+  width: auto;
+  padding: 10px 16px;
+  background-color: #241525;
+  color: #f7f1f5;
+  border: 1px solid #a6538b;
+  border-radius: 6px;
+  font-size: 14px;
+}
 .guilda img {
   width: 290px;
   margin: 30px auto 0;
 }
 
+#mensagem-guilda {
+  margin: 0;
+}
 
-
-form {
-  padding: 28px;
-  border: 1px solid #392535;
+#mensagem-guilda.msg-erro,
+#mensagem-guilda.msg-sucesso {
+  margin-top: 32px;
+  padding: 14px 16px;
+  background-color: #241525;
+  border: 1px solid #a6538b;
+  border-radius: 8px;
+  color: #f7f1f5;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 form h3 {
@@ -576,7 +741,30 @@ footer a {
 }
 
 
+@media (min-width: 768px) {
+  header {
+    column-gap: 12px;
+  }
 
+  header #botao-modo-noturno {
+    align-self: center;
+    width: auto;
+    min-height: 40px;
+    margin: 0 0 0 auto;
+    padding: 8px 12px;
+    background-color: transparent;
+    color: #f7f1f5;
+    border: 1px solid #76516e;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+  }
+
+  header #botao-modo-noturno:hover {
+    background-color: #382b3b;
+    transform: none;
+  }
+}
 
 
 @media (max-width: 767px) {
@@ -584,9 +772,36 @@ footer a {
     padding: 30px 6%;
   }
 
-  nav {
+  #botao-menu {
+    display: block;
+    width: 48px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    color: #ff72d1;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .menu-navegacao {
+    display: none;
     width: 100%;
-    gap: 8px 16px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .menu-navegacao.aberto {
+    display: flex;
+    gap: 0;
+    padding: 8px 16px;
+    background-color: #211421;
+    border: 1px solid #392535;
+    border-radius: 8px;
+  }
+
+   .menu-navegacao.aberto a + a {
+    border-top: 1px solid #392535;
   }
 
   h1 {

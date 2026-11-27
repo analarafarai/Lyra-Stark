@@ -7,6 +7,8 @@
 
     <link rel="icon" href="IMAGENS/ÍCONE.png">
     <link rel="stylesheet" href="CSS/style.css">
+
+    
 </head>
 <body>
     
@@ -16,7 +18,11 @@
             <p>NÊMESIS</p>
         </a>
         
-        <nav>
+        <button type="button" id="botao-modo-noturno">Modo noturno</button>
+
+        <button type="button" id="botao-menu">&#9776;</button>
+
+        <nav class="menu-navegacao">
             <a href="#origem">Origem</a>
             <a href="#habilidades">Habilidades</a>
             <a href="#atributos">Atributos</a>
@@ -28,9 +34,14 @@
     <main>
         <section class="inicio" id="inicio">
             <div class="textodoinicio">
+
+                <p id="saudacao-heroi"></p>
+
                 <p class="etiqueta">
                     PROJETO AHCOR - 007 / LYRA STARK
                 </p>
+
+                
 
                 <H1>NÊMESIS.</H1>
 
@@ -64,98 +75,262 @@
             <div>
                 <p class="etiqueta">01 / ORIGEM</p>
 
-                <H2>O PROJETO FALHOU <br>
+                <h2>O PROJETO FALHOU <br>
                     <b>ELA NÃO.</b>
-                </H2>
+                </h2>
 
                 <p class="historiaemdestaque">
-                    A Aeternum queria controlar seus poderes.
-                    Acabou dando a ela um motivo para revidar.
+                    Eles tentaram transformar uma Stark em uma arma.<br>
+                    Esqueceram que os Stark sempre escolhem para onde apontá-la.
                 </p>
 
-                <p> 
-                    Filha de Tony Stark, Lyra cresceu entre os laboratórios
-                    da Stark Industries e a Torre dos Vingadores.
-                    Desde criança, manifesta uma energia primordial capaz
-                    de alterar matéria, espaço, tempo e realidade. 
-                </p>
+                <article class="capitulo">
+                    <h3 class="historiaemdestaque">Capítulo 1 — A infância de Lyra</h3>
 
-                <p>
-                    Aos dezessete anos, a Aeternum sequestrou Peter Parker
-                    para atraí-la ao Projeto AHCOR. O experimento deixou
-                    Lyra clinicamente morta por sete minutos.
-                    Ela sobreviveu e salvou Peter, mas os responsáveis
-                    escaparam com parte de sua energia.
-                </p>
+                    <p>Filha de Tony Stark, Lyra cresceu entre os laboratórios da Stark Industries e a Torre dos Vingadores. Sua infância foi marcada pela convivência com algumas das mentes mais brilhantes e poderosas da Terra-737. Enquanto outras crianças aprendiam sobre o universo através de livros, Lyra crescia cercada por tecnologias experimentais, artefatos extraterrestres e discussões sobre ameaças capazes de comprometer a existência da humanidade.</p>
 
-                <p>
-                    Aos dezenove anos, adotou o nome Nêmesis:
-                    a retribuição contra a arrogância e o abuso de poder.
-                    Agora investiga a Aeternum e as anomalias provocadas
-                    por seus experimentos na Terra-737.               
-                </p>
+                    <div class="capitulo-extra" hidden>
+                        <p>Desde muito cedo, demonstrou uma capacidade intelectual extraordinária, herdando do pai não apenas a genialidade, mas também a inquietação diante de tudo aquilo que ainda não compreendia. Entretanto, havia algo em Lyra que nem mesmo Tony Stark conseguia explicar.</p>
+
+                        <p>Aos sete anos, começaram as primeiras manifestações de uma energia desconhecida. Objetos mudavam de composição sem qualquer interferência física, relógios apresentavam inconsistências temporais e equipamentos registravam alterações nas propriedades do espaço ao seu redor. Inicialmente interpretados como fenômenos isolados, esses acontecimentos revelaram a existência de uma energia primordial capaz de interferir diretamente nas estruturas fundamentais da realidade.</p>
+
+                        <p>Diferentemente de outras fontes de poder conhecidas pelos Vingadores, a energia de Lyra não parecia obedecer às leis convencionais da física. Ela não apenas manipulava elementos existentes: era capaz de modificar as próprias condições que permitiam sua existência.</p>
+
+                        <p>Tony dedicou anos ao estudo dessas manifestações, desenvolvendo dispositivos de monitoramento e contenção que permitissem à filha compreender suas habilidades sem comprometer a própria segurança. Os resultados, entretanto, eram inconclusivos. A cada avanço científico, surgiam novas contradições. A energia não apresentava um limite mensurável e parecia evoluir juntamente com a consciência de Lyra.</p>
+
+                        <p>Preocupado com as consequências de uma descoberta dessa magnitude, Tony manteve grande parte das pesquisas sob sigilo. Mas a existência de Lyra já havia despertado interesses externos.</p>
+                    </div>
+
+                    <button type="button" class="btn-ver-mais">Ler mais</button>
+                </article>
+
+                <article class="capitulo">
+                    <h3 class="historiaemdestaque">Capítulo 2 — A organização Aeternum</h3>
+
+                    <p>Durante anos, uma organização clandestina denominada Aeternum acompanhou silenciosamente o desenvolvimento de indivíduos com capacidades extraordinárias. Composta por cientistas, estrategistas, agentes infiltrados e antigos integrantes de instituições governamentais, a organização defendia que a sobrevivência da humanidade não poderia depender da vontade de seres cujo poder ultrapassava qualquer mecanismo de controle.</p>
+
+                    <div class="capitulo-extra" hidden>
+                        <p>Para a Aeternum, indivíduos capazes de alterar a realidade representavam uma ameaça à continuidade da civilização. Entretanto, em vez de eliminar essas capacidades, a organização pretendia apropriá-las.</p>
+
+                        <p>Lyra tornou-se o centro de suas investigações.</p>
+
+                        <p>A possibilidade de reproduzir sua energia significava muito mais do que desenvolver uma arma. Significava adquirir a capacidade de redefinir acontecimentos históricos, modificar estruturas materiais, interferir na passagem do tempo e estabelecer uma realidade submetida aos interesses da organização.</p>
+
+                        <p>Assim nasceu o Projeto AHCOR, uma iniciativa secreta destinada à extração, reprodução e instrumentalização da energia primordial.</p>
+
+                        <p>Durante anos, a Aeternum reuniu informações sobre Lyra, estudando suas manifestações energéticas, seus vínculos afetivos e suas respostas emocionais. A organização compreendeu que confrontá-la diretamente seria praticamente impossível. Precisava encontrar uma maneira de fazer com que ela se entregasse voluntariamente.</p>
+
+                        <p>Encontrou essa vulnerabilidade em Peter Parker.</p>
+                    </div>
+
+                    <button type="button" class="btn-ver-mais">Ler mais</button>
+                </article>
+
+                <article class="capitulo">
+                    <h3 class="historiaemdestaque">Capítulo 3 — Projeto AHCOR-007</h3>
+
+                    <p>A relação entre Lyra e Peter havia se desenvolvido naturalmente ao longo dos anos. Ambos compartilhavam a inteligência, a curiosidade científica e a dificuldade de conciliar uma vida comum com responsabilidades extraordinárias.</p>
+
+                    <div class="capitulo-extra" hidden>
+                        <p>Peter representava uma das poucas pessoas diante das quais Lyra não precisava justificar sua existência ou demonstrar controle absoluto sobre suas capacidades. Ao lado dele, não era uma anomalia científica, uma potencial ameaça ou a filha de um dos homens mais influentes do planeta. Era simplesmente Lyra.</p>
+
+                        <p>Aos dezessete anos, a Aeternum sequestrou Peter Parker e utilizou sua sobrevivência como condição para que Lyra se submetesse ao Projeto AHCOR.</p>
+
+                        <p>Consciente de que qualquer intervenção precipitada poderia comprometer a vida de Peter, Lyra aceitou as exigências da organização. Os responsáveis acreditavam ter desenvolvido um sistema capaz de extrair sua energia e transferi-la para uma estrutura artificial de contenção.</p>
+
+                        <p>O experimento recebeu a identificação AHCOR-007.</p>
+
+                        <p>À medida que a extração avançava, os sistemas começaram a apresentar inconsistências. Instrumentos registraram alterações simultâneas na matéria, no espaço e na percepção temporal. A energia primordial reagia à tentativa de separação, tornando progressivamente instáveis as condições físicas do complexo.</p>
+
+                        <p>O procedimento culminou no colapso das funções vitais de Lyra.</p>
+
+                        <p>Durante exatamente sete minutos, ela permaneceu clinicamente morta.</p>
+
+                        <p>Entretanto, sua energia não desapareceu.</p>
+
+                        <p>Os registros recuperados posteriormente apresentavam informações contraditórias. Enquanto os equipamentos médicos indicavam ausência de atividade vital, os sensores energéticos continuavam detectando sua presença. Alguns sistemas registraram acontecimentos antes que eles ocorressem. Outros apresentaram informações referentes a eventos que jamais aconteceram.</p>
+
+                        <p>Até hoje, não existe uma explicação conclusiva sobre o que ocorreu durante aqueles sete minutos.</p>
+
+                        <p>Lyra recuperou a consciência, rompeu os mecanismos de contenção e conseguiu salvar Peter. Contudo, parte dos responsáveis pelo experimento escapou, levando consigo fragmentos da energia extraída.</p>
+
+                        <p>A Aeternum havia fracassado em controlar Lyra, mas obtido material suficiente para continuar suas pesquisas.</p>
+
+                        <p>E Lyra já não era exatamente a mesma.</p>
+                    </div>
+
+                    <button type="button" class="btn-ver-mais">Ler mais</button>
+                </article>
+
+                <article class="capitulo">
+                    <h3 class="historiaemdestaque">Capítulo 4 — Os sete minutos</h3>
+
+                    <p>Após o incidente, Tony Stark iniciou uma investigação independente sobre as consequências do Projeto AHCOR. Os exames indicavam que a energia primordial havia sofrido uma transformação significativa, estabelecendo uma conexão ainda mais profunda com a existência física de Lyra.</p>
+
+                    <div class="capitulo-extra" hidden>
+                        <p>Suas capacidades passaram a apresentar características anteriormente desconhecidas. A percepção temporal tornou-se mais complexa, sua resistência física aumentou e manifestações energéticas começaram a ocorrer em resposta a ameaças antes mesmo que ela as identificasse conscientemente.</p>
+
+                        <p>Lyra também passou a experimentar lembranças fragmentadas de acontecimentos que não reconhecia como parte de sua própria vida. Em determinados momentos, conseguia perceber possibilidades alternativas de um mesmo evento, como se diferentes versões da realidade coexistissem diante dela.</p>
+
+                        <p>Não sabia se essas experiências eram consequências neurológicas do experimento ou manifestações de uma consciência que havia ultrapassado os limites da Terra-737.</p>
+
+                        <p>A única certeza era que alguma coisa havia mudado durante sua morte.</p>
+
+                        <p>A recuperação física foi consideravelmente mais rápida do que a psicológica. Lyra passou a questionar os limites da própria identidade, a natureza de seus poderes e a possibilidade de que sua existência estivesse vinculada a estruturas cósmicas ainda desconhecidas.</p>
+
+                        <p>A ideia de que alguém pudesse novamente utilizar as pessoas que amava para controlá-la tornou-se intolerável.</p>
+
+                        <p>Nos dois anos seguintes, dedicou-se ao desenvolvimento de suas habilidades, ao aprimoramento de tecnologias próprias e à investigação clandestina da Aeternum. Combinando conhecimentos adquiridos na Stark Industries com suas capacidades primordiais, desenvolveu equipamentos destinados a monitorar distorções da realidade e identificar assinaturas energéticas semelhantes à sua.</p>
+
+                        <p>O objetivo inicial era recuperar aquilo que havia sido roubado.</p>
+
+                        <p>Com o tempo, tornou-se evidente que as consequências do experimento eram muito maiores.</p>
+                    </div>
+
+                    <button type="button" class="btn-ver-mais">Ler mais</button>
+                </article>
+
+                <article class="capitulo">
+                    <h3 class="historiaemdestaque">Capítulo 5 — O nascimento de Nêmesis</h3>
+
+                    <p>Aos dezenove anos, Lyra adotou o nome Nêmesis, inspirado na divindade grega associada à retribuição contra a arrogância, a injustiça e o abuso de poder.</p>
+
+                    <div class="capitulo-extra" hidden>
+                        <p>A escolha não representava apenas uma identidade operacional. Era uma declaração de princípios.</p>
+
+                        <p>Lyra havia crescido entre heróis que dedicavam suas vidas à proteção da humanidade. Admirava seus ideais, mas já não acreditava que todos os conflitos pudessem ser resolvidos dentro dos mesmos limites morais e institucionais.</p>
+
+                        <p>Sua experiência com a Aeternum demonstrara que indivíduos convencidos de agir em nome de um bem maior eram capazes de justificar atrocidades em nome da segurança coletiva.</p>
+
+                        <p>Para Nêmesis, nenhuma instituição, organização ou entidade deveria possuir autoridade absoluta sobre a existência de outra.</p>
+
+                        <p>Embora mantenha vínculos com os Vingadores, sua atuação é predominantemente independente. Suas decisões frequentemente entram em conflito com os protocolos tradicionais da equipe, especialmente quando considera que a preservação de determinadas estruturas de poder compromete a proteção daqueles que deveriam servir.</p>
+
+                        <p>Não busca reconhecimento público, aprovação governamental ou a construção de uma imagem heroica.</p>
+
+                        <p>Sua prioridade é impedir que outros sejam submetidos ao mesmo destino que ela.</p>
+                    </div>
+
+                    <button type="button" class="btn-ver-mais">Ler mais</button>
+                </article>
+
+                <article class="capitulo">
+                    <h3 class="historiaemdestaque">Capítulo 6 — Protocolo Zero</h3>
+
+                    <p>Atualmente, a Terra-737 apresenta uma série de anomalias cuja origem permanece desconhecida pelas autoridades. Descontinuidades temporais, alterações materiais espontâneas, inconsistências em registros históricos e manifestações energéticas incompatíveis com as leis conhecidas da física começaram a surgir em diferentes regiões do planeta.</p>
+
+                    <div class="capitulo-extra" hidden>
+                        <p>Lyra identificou nessas ocorrências assinaturas semelhantes à energia extraída durante o Projeto AHCOR.</p>
+
+                        <p>A descoberta confirmou suas suspeitas: a Aeternum continuava ativa.</p>
+
+                        <p>Sob a designação Protocolo Zero, Nêmesis iniciou uma investigação independente destinada a localizar os responsáveis, recuperar os fragmentos de sua energia e interromper os experimentos antes que suas consequências se tornem irreversíveis.</p>
+
+                        <p>Entretanto, existe uma possibilidade ainda mais preocupante.</p>
+
+                        <p>Se a Aeternum conseguiu reproduzir artificialmente uma parcela de sua energia, talvez esteja desenvolvendo algo que ultrapasse a própria capacidade de controle da organização. Uma entidade, uma estrutura ou uma forma de existência que não deveria ser possível.</p>
+
+                        <p>Lyra desconhece a verdadeira extensão do projeto. Também não sabe se os sete minutos de sua morte foram um acidente ou uma etapa prevista pelos responsáveis.</p>
+
+                        <p>Pela primeira vez, a investigação sobre a Aeternum ameaça revelar não apenas o que fizeram com ela, mas o que ela realmente é.</p>
+
+                        <p>Nêmesis permanece em atividade na Terra-737, operando entre os limites da ciência, da tecnologia e do desconhecido. Seu potencial continua sem classificação definitiva, e a extensão de suas capacidades permanece indeterminada.</p>
+
+                        <p>A Aeternum acreditava que compreender o poder significava possuir o direito de controlá-lo.</p>
+
+                        <p>Agora, terá de enfrentar as consequências dessa convicção.</p>
+                    </div>
+
+                    <button type="button" class="btn-ver-mais">Ler mais</button>
+                </article>
 
             </div>
 
-            <article class="ficha">
-                <h3>FICHA DE IDENTIFICAÇÃO</h3>
-                <p class="etiqueta">S.H.I.E.L.D</p>
+            <DIV>
+                <article class="ficha">
+                    <h3>FICHA DE IDENTIFICAÇÃO</h3>
+                    <p class="etiqueta">S.H.I.E.L.D</p>
 
-                <img src="IMAGENS/LYRA.cir.png" alt="Lyra Stark">
+                    <img src="IMAGENS/LYRA.cir.png" alt="Lyra Stark">
 
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>Nome</th>
-                            <td>Lyra Stark</td> 
-                        </tr>
-                        <tr>
-                            <th>Codinome</th>
-                            <td>Nêmesis</td>
-                        </tr>
-                        <tr>
-                            <th>Idade</th>
-                            <td>19 anos</td>
-                        </tr>
-                        <tr>
-                            <th>Origem</th>
-                            <td>Terra-737</td>
-                        </tr>
-                        <tr>
-                            <th>Natureza</th>
-                            <td>Singularidade Cósmica</td>
-                        </tr>
-                        <tr>
-                            <th>Raça</th>
-                            <td>Humana</td>
-                        </tr>
-                        <tr>
-                            <th>Classe</th>
-                            <td>Manipuladora de Realidade</td>
-                        </tr>
-                        <tr>
-                            <th>Classificação</th>
-                            <td>Nível Ômega</td>
-                        </tr>
-                        <tr>
-                            <th>Potencial</th>
-                            <td>Imensurável</td>
-                        </tr>
-                        <tr>
-                            <th>Alinhamento</th>
-                            <td>Anti-heroína / Imprevisível</td>
-                        <tr>
-                            <th>Base</th>
-                            <td>Torre dos Vingadores</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Nome</th>
+                                <td>Lyra Stark</td> 
+                            </tr>
+                            <tr>
+                                <th>Codinome</th>
+                                <td>Nêmesis</td>
+                            </tr>
+                            <tr>
+                                <th>Idade</th>
+                                <td>19 anos</td>
+                            </tr>
+                            <tr>
+                                <th>Origem</th>
+                                <td>Terra-737</td>
+                            </tr>
+                            <tr>
+                                <th>Natureza</th>
+                                <td>Singularidade Cósmica</td>
+                            </tr>
+                            <tr>
+                                <th>Raça</th>
+                                <td>Humana</td>
+                            </tr>
+                            <tr>
+                                <th>Classe</th>
+                                <td>Manipuladora de Realidade</td>
+                            </tr>
+                            <tr>
+                                <th>Classificação</th>
+                                <td>Nível Ômega</td>
+                            </tr>
+                            <tr>
+                                <th>Potencial</th>
+                                <td>Imensurável</td>
+                            </tr>
+                            <tr>
+                                <th>Alinhamento</th>
+                                <td>Anti-heroína / Imprevisível</td>
+                            <tr>
+                                <th>Base</th>
+                                <td>Torre dos Vingadores</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                <p class="status">
-                    STATUS: SOB OBSERVAÇÃO
-                </p>
+                    <p class="status">
+                        STATUS: SOB OBSERVAÇÃO
+                    </p>
 
-            </article>
+                </article>
+
+                <article class="linha-do-tempo">
+                    <h3>LINHA DO TEMPO</h3>
+
+                    <p>
+                        <strong>7 anos — Primeiras manifestações</strong><br>
+                        A energia de Lyra começa a alterar objetos, relógios e o espaço ao seu redor.
+                    </p>
+
+                    <p>
+                        <strong>17 anos — Projeto AHCOR-007</strong><br>
+                        Lyra sobrevive ao experimento da Aeternum e resgata Peter Parker.
+                    </p>
+
+                    <p>
+                        <strong>19 anos — Nasce Nêmesis</strong><br>
+                        Lyra assume o codinome e passa a investigar a Aeternum por conta própria.
+                    </p>
+
+                    <p>
+                        <strong>Atualmente — Protocolo Zero</strong><br>
+                        Novas anomalias indicam que a Aeternum continua usando a energia extraída.
+                    </p>
+                </article>
+            </DIV>
         </section>
 
         <section id="habilidades">
@@ -191,6 +366,14 @@
                     <p class="explica">
                         Três níveis até a transcendência completa.
                     </p>
+
+                    <p id="status-xp">XP acumulado: 0 / 100</p>
+
+                    <div class="barra">
+                        <div class="preenche0" id="barra-xp"></div>
+                    </div>
+
+                    <button type="button" id="btn-ganhar-xp">Ganhar XP</button>
 
                 </article>
             </div>
@@ -401,21 +584,17 @@
                 <b>TECNOLOGIA SEM LIMITES.</b>
             </h2>
 
-            <div class="inventario">
-
-                <article>
-                    <img src="IMAGENS/TRAJE.png" alt="Traje de combate Nêmesis">
-                </article>
-
-                <article>
-                    <img src="IMAGENS/PISTOLA.png" alt="Pistola de Deslocamento">
-                </article>
-
-                <article>
-                    <img src="IMAGENS/VÉSPER.png" alt="Interface Vésper">
-                </article>
-
+            <div class="filtros-inventario">
+                <button type="button" class="btn-filtro ativo" data-filtro="todos">Todos</button>
+                <button type="button" class="btn-filtro" data-filtro="armadura">Armadura</button>
+                <button type="button" class="btn-filtro" data-filtro="arma">Arma</button>
+                <button type="button" class="btn-filtro" data-filtro="tecnologia">Tecnologia</button>
+                <button type="button" class="btn-filtro" data-filtro="reliquia">Relíquia</button>
             </div>
+
+            <p id="contador-inventario"></p>
+
+            <div class="inventario" id="lista-inventario"></div>
 
             <div class="conquistas">
                 <h3>CONQUISTAS REGISTRADAS</h3>
@@ -455,9 +634,11 @@
                 <b>ESTABELECIDA.</b></h2>
 
                 <img src="IMAGENS/AVENGERS.png" alt="Emblema dos Vingadores">
+
+                
             </div>
 
-            <form action="/enviar" method="post">
+            <form action="/enviar" method="post" novalidate> 
                 
                 <h3>NOVA TRANSMISSÃO</h3>
 
@@ -474,6 +655,9 @@
                 placeholder="Digite sua mensagem" required></textarea>
 
                 <button type="submit">ENVIAR</button>
+
+                <p id="mensagem-guilda"></p>
+
             </form>
         </section>
 
@@ -486,6 +670,9 @@
 
         <a href="#inicio">VOLTAR AO TOPO ↑</a>
     </footer>
+
+
+   <script src="JS/script.js"></script>
 
 </body>
 </html>
